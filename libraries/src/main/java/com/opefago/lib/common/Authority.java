@@ -1,0 +1,10 @@
+package com.opefago.lib.common;
+
+public enum Authority {
+    ROLE_USER,
+    ROLE_USER_PHONE_VERIFIED,
+    ROLE_USER_BVN_UPDATED,
+    ROLE_USER_ACCOUNT_SECURED,
+    ROLE_USER_COMPLETED_PROFILE,
+    ROLE_USER_SELFIE_UPDATED
+}

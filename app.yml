@@ -1,0 +1,33 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: ${APP_PORT:-8080}
+  adminConnectors:
+    - type: http
+      port: ${APP_ADMIN_PORT:-8081}
+redis:
+  host: ${REDIS_HOST:-localhost}
+  port: ${REDIS_PORT:-6379}
+  db: ${REDIS_DB:-0}
+  timeout: 2000
+  maxIdle: 16
+  minIdle: 4
+  maxTotal: 20
+  ssl: ${REDIS_SSL:-false}
+  pubSubChannel: ${REDIS_CHANNEL:-message}
+  retryCount: ${REDIS_RETRY_COUNT:-3}
+  ttl: ${REDIS_TTL:-1440}
+  pingConnectionInterval: 36000
+consumer:
+  bootstrapServer: ${KAFKA_HOST:-127.0.0.1:9092}
+  consumerGroupId: consumer2
+
+producer:
+  bootstrapServer: ${KAFKA_HOST:-127.0.0.1:9092}
+  acks: all
+  retries: 2147483647 # int max value
+  maxInFlightRequestsPerConnection: 1
+  maxPollBlockTime: 10s
+
+code:
+  expirationInSeconds: 86400
