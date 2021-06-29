@@ -1,7 +1,7 @@
-package com.opefago.services;
+package com.opefago.main.services;
 
 import com.opefago.config.CodeConfiguration;
-import com.opefago.configuration.AppConfiguration;
+import com.opefago.main.configuration.AppConfiguration;
 import com.opefago.lib.common.types.CodeQueue;
 import com.opefago.lib.common.types.Status;
 import com.opefago.lib.kafka.KafkaProducerApi;

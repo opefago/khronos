@@ -1,14 +1,13 @@
-package com.opefago.resources;
+package com.opefago.main.resources;
 
 import com.codahale.metrics.annotation.Timed;
 import com.opefago.lib.common.types.Language;
 import com.opefago.lib.models.command.RunCodeCommand;
-import com.opefago.services.CodeService;
+import com.opefago.main.services.CodeService;
 import org.apache.http.client.HttpResponseException;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;

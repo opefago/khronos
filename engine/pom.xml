@@ -23,14 +23,17 @@
             <version>1.0</version>
             <scope>compile</scope>
         </dependency>
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.docker-java/docker-java -->
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java</artifactId>
+            <version>3.2.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.docker-java</groupId>
+            <artifactId>docker-java-transport-httpclient5</artifactId>
+            <version>3.2.10</version>
+        </dependency>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <dropwizard.version>2.0.7</dropwizard.version>
-        <resilience4j.version>0.14.1</resilience4j.version>
-        <mockito.version>2.25.1</mockito.version>
-        <org.mybatis.pagination.version>0.0.3</org.mybatis.pagination.version>
-    </properties>
+    </dependencies>
 </project>

@@ -20,7 +20,7 @@ redis:
   pingConnectionInterval: 36000
 consumer:
   bootstrapServer: ${KAFKA_HOST:-127.0.0.1:9092}
-  consumerGroupId: consumer2
+  consumerGroupId: khronos
 
 producer:
   bootstrapServer: ${KAFKA_HOST:-127.0.0.1:9092}

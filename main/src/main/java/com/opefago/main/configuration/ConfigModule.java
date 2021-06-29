@@ -1,4 +1,4 @@
-package com.opefago.configuration;
+package com.opefago.main.configuration;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;

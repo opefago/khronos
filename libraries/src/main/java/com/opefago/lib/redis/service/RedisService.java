@@ -39,7 +39,7 @@ public class RedisService implements Managed {
                 .setPingConnectionInterval(redisConfiguration.getPingConnectionInterval())
                 .setDatabase(redisConfiguration.getDb());
         client = Redisson.create(config);
-        defaultTable = "teller";
+        defaultTable = "khronos";
     }
 
     public <T> T read(final String key, final Class<T> tClass) throws IOException {
